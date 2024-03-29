@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+#orderSection, #paymentSection, #cashPaymentSection {
+    max-width: 300px;
+    margin: 0 auto;
+    display: none;
+}
+
+input[type="number"], select {
+    width: 80%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#newOrderButton {
+    display: block;
+    margin: 20px auto; /* Center the button horizontally */
+}
