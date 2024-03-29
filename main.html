@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MYF Good Friday Sales</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+<h2>MYF Good Friday Sales</h2>
+
+<div id="orderSection">
+    <p>Remaining sets of Hot-Cross Buns: <span id="buns">20</span></p>
+    <p>Remaining sets of Vadas: <span id="vadas">30</span></p>
+    <label for="bordInput">Hot-Cross Buns order:</label>
+    <input type="number" id="bordInput" placeholder="Enter quantity"><br>
+    <label for="vordInput">Vadas order:</label>
+    <input type="number" id="vordInput" placeholder="Enter quantity"><br>
+    <button onclick="calculateTotal()">Calculate Total</button>
+</div>
+
+<div id="paymentSection">
+    <p id="totalAmount"></p>
+    <label for="paymentMethod">Choose payment method:</label>
+    <select id="paymentMethod">
+        <option value="cash">Cash</option>
+        <option value="online">Online</option>
+    </select><br>
+    <button onclick="proceedToNext()">Next</button>
+</div>
+
+<div id="cashPaymentSection">
+    <label for="amountReceived">Amount Received:</label>
+    <input type="number" id="amountReceived" placeholder="Enter amount received"><br>
+    <button onclick="calculateBalance()">Done</button>
+</div>
+
+<button id="newOrderButton" onclick="resetOrder()">New Order</button>
+
+<script src="main.js"></script>
+
+</body>
+</html>
